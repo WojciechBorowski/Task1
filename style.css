@@ -1,0 +1,92 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.input-group {
+  max-width: 500px; /* Opcjonalne: ustawienie maksymalnej szerokości dla elementu wyszukiwania */
+  width: 100%;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+#results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-card-body {
+  padding: 15px;
+  text-align: center; /* Wyśrodkowanie tekstu wewnątrz karty */
+}
+
+.recipe-card-body h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.recipe-card-body p {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.recipe-card-body ul {
+  padding-left: 20px;
+  list-style-type: disc; /* Default value, can be changed if needed */
+  text-align: left; /* Wyśrodkowanie listy */
+}
+
+.recipe-card-body li {
+  margin-bottom: 5px;
+}
+
+.recipe-card-body a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.recipe-card-body .btn {
+  width: 50%; /* Pełna szerokość przycisku */
+}
+
+/* Dodatkowy styl dla przepisów w sekcji ulubionych */
+#favourites-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#favourites-results .recipe-card {
+  width: calc(50% - 20px); /* Ustawienie szerokości karty na 50% szerokości z odstępem 20px */
+  max-width: 300px; /* Maksymalna szerokość karty */
+}
